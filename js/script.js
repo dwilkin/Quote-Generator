@@ -11,7 +11,7 @@ function print(message) {
   outputDiv.innerHTML = message;
 }
 
-// getRandomQuote gets a random number based on the number of objects in an object literal array (n).
+// getRandomQuote gets a random number based on the number of objects (n) in an object literal array.
 // Typically when using Math.random you add +1 due to the inclusive zero and exclusive one,
 // but here we actually want the selection to be from zero to n-1 so no addition is needed
 function getRandomQuote(quoteList) {
