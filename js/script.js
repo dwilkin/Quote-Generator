@@ -4,8 +4,10 @@
 // Initially I had trouble with this because printQuote takes an object literal array
 // as an argument, but once I converted it to an anonymous function we were good
 document.getElementById("loadQuote").addEventListener("click", function() {printQuote(quotes);}, false);
+document.getElementById("add-button").addEventListener("click", toggleAddForm, true);
+var addFormOpen = false;
 
-// This is a simple printing function like we've gone over in previous lessons, called later
+// This is a simple printing function
 function print(message) {
   var outputDiv = document.getElementById("quote-box");
   outputDiv.innerHTML = message;
@@ -43,4 +45,19 @@ function printQuote(quoteList) {
 
   message += '</p>';
   print(message);
+}
+
+function toggleAddForm() {
+  event.stopPropagation();
+  var quoteBox = document.getElementById("quote-box");
+  var menuForm = document.getElementById("menu-form")
+  if (addFormOpen === false){
+    quoteBox.style.top = "40%";
+    menuForm.style.display = "block";
+    addFormOpen = true;
+  } else {
+    quoteBox.style.top = "20%";
+    menuForm.style.display = "none";
+    addFormOpen = false;
+  }
 }

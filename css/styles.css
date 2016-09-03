@@ -163,7 +163,9 @@ nav {
 }
 
 /*Add button form */
-
+.menu-form {
+  display: none;
+}
 /*End add button form */
 
 #settings { background: #41D05F; }
