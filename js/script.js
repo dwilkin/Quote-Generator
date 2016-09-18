@@ -72,9 +72,9 @@ function printQuote(quoteList) {
   message = '<p class="quote">' + quoteMeta.quote + '</p>';
   message += '<p class="source">' + quoteMeta.source;
 
-// in these two if statements we need to determine if the property exists,
-// and if it does we need to format the contents for output. If it doesn't
-// we can skip it.
+  // in these two if statements we need to determine if the property exists,
+  // and if it does we need to format the contents for output. If it doesn't
+  // we can skip it.
   if (quoteMeta.hasOwnProperty('citation')){
     message += '<span class="citation">' + quoteMeta.citation + '</span>';
   }
