@@ -163,7 +163,7 @@ var quotes = [
     quote: "The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid",
     source: "Jane Austen",
     citation: "Northanger Abbey",
-    year: 1817
+    year: 1817,
     tags: ["intelligence", "stupidity", "books"]
   },
   {
